@@ -14,7 +14,7 @@
 	<div><a href="#" onClick="machigai()">オレンジジュース</a></div>
 	</div>
 	<script>
-var hit=localStorage.hit;
+var hit=Number(localStorage.hit);
 function seikai(){localStorage.hit=hit+1;
 				 location.href="page3.html";}
 function machigai(){localStorage.hit=hit;
