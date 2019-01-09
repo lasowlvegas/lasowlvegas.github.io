@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Qestion2</title>
+	<style>body{background-color:#8F8F8F}</style>
+</head>
+
+<body>
+	<div align="center">
+		<h1>問題2:クモが飲んでしまうとめちゃくちゃな巣をつくってしまう飲み物はどれでしょう？</h1>
+	<img src="蜘蛛.jpg">
+	<div><a href="#" onClick="seikai()">コーヒー</a></div>
+	<div><a href="#" onClick="machigai()">オレンジジュース</a></div>
+	</div>
+	<script>
+var hit=localStorage.hit;
+function seikai(){localStorage.hit=hit+1;
+				 location.href="page3.html";}
+function machigai(){localStorage.hit=hit;
+				   location.href="page3.html";}
+
+	
+	</script>
+</body>
+</html>

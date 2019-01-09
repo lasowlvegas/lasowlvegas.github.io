@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>結果発表(^ ^)</title>
+</head>
+<body>
+<div id="kekka">
+    <h1>正解数は</h1>
+    <div id="result"></div>
+</div>
+
+    <script>
+var result = document.getElementById("result");
+var hit = localStorage.hit;
+
+result.innerHTML = "正解数は5問中"+hit+"問です。";
+    </script>
+</body>
+</html>

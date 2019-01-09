@@ -1,0 +1,26 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>クイズ３</title>
+	<style>body{background-color:#4A56FF}</style>
+</head>
+
+<body>
+	<div align="center">
+		<h1>問題3:細菌とウイルスはどちらが小さいでしょう？</h1>
+	<img src="original%20(1).gif">
+	<div><a href="#" onClick="machigai()">細菌</a></div>
+			<div><a href="#" onClick="seikai()">ウイルス</a></div></div>
+<script>
+var hit=Number(localStorage.hit);
+function seikai(){localStorage.hit=hit+1;
+				 location.href="page4.html";}
+function machigai(){localStorage.hit=hit;
+				   location.href="page4.html";}
+
+	
+	</script>
+</body>
+</html>

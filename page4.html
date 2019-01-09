@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>無題ドキュメント</title>
+	<style>body{background-color:antiquewhite}</style>
+</head>
+
+<body>
+	<div align="center">
+		<h1>問題4:寒いのは北極、南極どちらでしょう？</h1>
+	<img src="20171013221802.gif">
+	<div><a href="#" onClick="seikai()">南極</a></div>
+	<div><a href="#" onClick="machigai()">北極</a></div>
+	</div>
+<script>
+var hit=Number(localStorage.hit);
+function seikai(){localStorage.hit=hit+1;
+				 location.href="page5.html";}
+function machigai(){localStorage.hit=hit;
+				   location.href="page5.html";}
+
+	</script>
+</body>
+</html>
