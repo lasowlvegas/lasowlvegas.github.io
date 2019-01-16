@@ -3,56 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>無題ドキュメント</title>
-    
-    
-    <link rel="icon" href="favicons/icon-16x16.png" type="image/png" sizes="16×16">
-    
-    <link rel="manifest" href="favicons/manifest.json">
-    
-	<script src="jquery-3.3.1.min.js"></script>
-<style>
-    body{background-color:darkmagenta;}
-    @media screen and (max-width:480px){
-        body{background-color: aquamarine;}    
-    
-    textarea{width: 90%;}
-    input{width: 100%;font-size: 24px;border: 1px solid #000;
-        margin-top: 20px;background-color:cornsilk}
-    }
-    
-    </style>
+<title>Qesutiion1</title>
+	<style>body{background-color:antiquewhite}</style>
 </head>
 
 <body>
-	<form action="" id="form">
-	<textarea id="memo" cols="30" rows="10"></textarea>
-	<div>
-	<input id="save" type="button" value="保存">
-	<input id="dele" type="button" value="消去">
-		
-		</div>
-	
-	
-	
-	</form>
-	
-	<script>
-		
-	var memo = localStorage.getItem("memodata");$("#memo").val(memo);
-	$("#save").click(function(){
-	memo = $("#memo").val();
-	localStorage.setItem("memodata",memo);
-	});
-		
-	$("#dele").click(function(){
-	$("#memo").val('');
-	localStorage.clear();
-		
-	});
-		
+	<div align="center">
+		<h1>問題1:パンを長期保存できるようにしたのはなんでしょう？</h1>
+	<img src="publicdomainq-0014507urf.jpg">
+	<div><a href="#" onClick="seikai()">ビスケット</a></div>
+	<div><a href="#" onClick="machigai()">クッキー</a></div>
+	</div>
+<script>
+var hit=0;
+function seikai(){localStorage.hit=hit+1;
+				 location.href="page2.html";}
+function machigai(){localStorage.hit=hit;
+				   location.href="page2.html";}
+
 	
 	</script>
-	
 </body>
+	
 </html>
